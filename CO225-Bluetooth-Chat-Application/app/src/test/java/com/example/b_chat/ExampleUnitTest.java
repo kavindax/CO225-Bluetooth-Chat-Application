@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.b_chat;
 
 import org.junit.Test;
 
