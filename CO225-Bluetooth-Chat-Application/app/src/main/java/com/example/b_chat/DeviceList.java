@@ -14,9 +14,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Set;
@@ -48,6 +50,19 @@ public class DeviceList extends AppCompatActivity {
 
         listAvailableDevices.setAdapter(adapterAvailableDevices);
         listPairedDevices.setAdapter(adapterPairedDevices);
+
+        listAvailableDevices.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String info = ((TextView)view).getText().toString();
+                String address = info.substring(info.length()-17);
+
+                Intent intent = new Intent();
+                intent.putExtra("device address", address);
+                setResult(RESULT_OK,intent);
+                finish();
+            }
+        });
 
         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         Set<BluetoothDevice> pairedDevices = bluetoothAdapter.getBondedDevices();
