@@ -22,7 +22,7 @@ public class ChatUtils {
     private AcceptThread acceptThread;
 
 
-    private final UUID APP_UUID = UUID.fromString("fa87c0d0-afac-11de-8a39-0800200c9a66");
+    private final UUID APP_UUID = UUID.fromString("60540c94-0994-49e2-9306-7399b8c6f61e");
     private final String APP_NAME = "B-Chat";
 
     public static final int STATE_NONE = 0;
