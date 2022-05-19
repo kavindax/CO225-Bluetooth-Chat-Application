@@ -6,7 +6,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.b_chat"
+        applicationId "com.example.login_page"
         minSdk 23
         targetSdk 32
         versionCode 1

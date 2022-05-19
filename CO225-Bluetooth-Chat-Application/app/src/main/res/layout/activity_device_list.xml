@@ -3,17 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/faces"
     tools:context=".DeviceList">
 
     <ProgressBar
         android:layout_width="25dp"
         android:layout_height="25dp"
+        android:layout_gravity="center_horizontal"
         android:id="@+id/id_progress_bar"
-        android:visibility="gone"
-        android:layout_gravity="center"/>
-
+        android:visibility="gone"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
         style="@android:style/ButtonBar"
         android:textSize="20dp"
         android:background="@android:color/holo_blue_light"
-        android:text="@string/str_paired_devices"/>
+        android:text="Paired Devices"/>
 
     <ListView
         android:layout_width="match_parent"
@@ -34,7 +34,7 @@
         style="@android:style/ButtonBar"
         android:textSize="20dp"
         android:background="@android:color/holo_blue_bright"
-        android:text="@string/str_available_devices"/>
+        android:text="Available Devices"/>
 
     <ListView
         android:layout_width="match_parent"

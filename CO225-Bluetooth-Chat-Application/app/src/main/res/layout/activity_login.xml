@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="#FFF06E"
+    android:background="@drawable/frame"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -15,7 +15,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_margin="40dp"
         android:layout_marginBottom="50dp"
-        android:text="Sign Up"
+        android:text="Sign In"
         android:textColor="@color/black"
         android:textSize="50dp"
         android:textStyle="bold" />
@@ -23,7 +23,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:id="@+id/id_username_login"
+        android:id="@+id/id_username_signin"
         android:hint="username"
         android:textSize="25dp"
         android:background="@drawable/edittextbackground"
@@ -33,37 +33,23 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:id="@+id/id_password_login"
+        android:id="@+id/id_password_signin"
         android:hint="password"
+        android:inputType="textPassword"
         android:textSize="25dp"
         android:background="@drawable/edittextbackground"
         android:paddingLeft="10dp"
         android:layout_marginBottom="30dp"/>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:id="@+id/id_confirm_password_login"
-        android:hint="confirm password"
-        android:textSize="25dp"
-        android:background="@drawable/edittextbackground"
-        android:paddingLeft="10dp"
-        android:layout_marginBottom="30dp"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:id="@+id/id_register_login"
-        android:text="REGISTER"
+        android:id="@+id/id_register_signin"
+        android:text="SIGN IN"
         android:textSize="20dp"
         android:backgroundTint="@color/black"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:id="@+id/id_signin_login"
-        android:text="already have an account"
-        android:textSize="15dp"
-        android:backgroundTint="@color/black"/>
+
 
 </LinearLayout>
